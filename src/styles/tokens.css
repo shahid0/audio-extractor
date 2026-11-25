@@ -1,0 +1,88 @@
+/* Baseline scaling: phone 390x844, tablet 834x1194, desktop 1440x800
+   1rem = 16px at each baseline. Hairlines (<=2px) remain px. */
+html {
+  font-size: clamp(0.8125rem, 4.1026vw, 1.125rem);
+}
+
+@media (width > 640px) {
+  html {
+    font-size: clamp(0.875rem, 1.9185vw, 1.125rem);
+  }
+}
+
+@media (width > 960px) {
+  html {
+    font-size: clamp(0.875rem, 1.1111vw, 1.375rem);
+  }
+}
+
+:root {
+  color-scheme: dark light;
+
+  --bg: #111214;
+  --surface: #181a1e;
+  --surface-raised: #202329;
+  --surface-hover: #272b33;
+  --border: #2c3038;
+  --border-strong: #434956;
+
+  --text: #f2f3f5;
+  --text-muted: #9da3ae;
+  --text-subtle: #737a87;
+
+  --accent: #e59a3c;
+  --accent-hover: #f0ae54;
+  --accent-ink: #14110b;
+  --accent-soft: rgba(229, 154, 60, 0.14);
+
+  --lossless: #4caf7a;
+  --lossless-soft: rgba(76, 175, 122, 0.14);
+
+  --danger: #e25b5b;
+  --danger-soft: rgba(226, 91, 91, 0.14);
+
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', Roboto,
+    sans-serif;
+  --font-mono: 'SF Mono', ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-pill: 999rem;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  --max-width: 40rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f5f3ef;
+    --surface: #ffffff;
+    --surface-raised: #efece6;
+    --surface-hover: #e7e3db;
+    --border: #dcd6cc;
+    --border-strong: #bfb7ab;
+
+    --text: #16171a;
+    --text-muted: #525660;
+    --text-subtle: #767b86;
+
+    --accent: #b86c14;
+    --accent-hover: #9c590c;
+    --accent-ink: #ffffff;
+    --accent-soft: rgba(184, 108, 20, 0.12);
+
+    --lossless: #1f7a49;
+    --lossless-soft: rgba(31, 122, 73, 0.12);
+
+    --danger: #c0392b;
+    --danger-soft: rgba(192, 57, 43, 0.1);
+  }
+}
