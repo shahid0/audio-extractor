@@ -25,3 +25,7 @@ npm run dev
 npm test
 npm run build
 ```
+
+## Author
+
+Built by [Shahid Hussain](https://shahidhussain.dev/), senior mobile & web engineer. More of his open source is on [his site](https://shahidhussain.dev/work/).

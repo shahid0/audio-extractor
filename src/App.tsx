@@ -90,6 +90,9 @@ export function App() {
         <footer className="app-footer">
           <p>Runs locally in WebAssembly. Your files stay on your device.</p>
           <p>Original stream copy · WAV · FLAC · MP3</p>
+          <p>
+            Made by <a href="https://shahidhussain.dev/">Shahid Hussain</a>
+          </p>
         </footer>
       </div>
 
